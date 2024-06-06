@@ -5,19 +5,19 @@ if (!defined('ABSPATH')) {
 }
 
 /**
- * Class ejtemFal
+ * Class faleHafez
  */
-class ejtemFal {
+class faleHafez {
     public $plugin_path = "";
 
     public $plugin_url = "";
 
     /**
-     * ejtemFal constructor.
+     * faleHafez constructor.
      */
     public function __construct() {
-        $this->plugin_path = ejtemFal_PLUGIN_DIRECTORY;
-        $this->plugin_url  = ejtemFal_PLUGIN_URL;
+        $this->plugin_path = faleHafez_PLUGIN_DIRECTORY;
+        $this->plugin_url  = faleHafez_PLUGIN_URL;
 
         $this->includes();
         $this->init_hooks();
@@ -28,8 +28,8 @@ class ejtemFal {
      */
     private function init_hooks(): void {
         register_activation_hook(
-            ejtemFal_PLUGIN_FILE,
-            ['\ejtemFal\Install', 'install']
+            faleHafez_PLUGIN_FILE,
+            ['\faleHafez\Install', 'install']
         );
 
         add_action('init', [$this, 'load_textdomain']);
@@ -41,9 +41,9 @@ class ejtemFal {
     public function load_textdomain(): void {
        
         load_plugin_textdomain(
-            ejtemFal_PLUGIN_TEXTDOMAIN,
+            faleHafez_PLUGIN_TEXTDOMAIN,
             false,
-            ejtemFal_PLUGIN_DIRECTORY . "/languages"
+            faleHafez_PLUGIN_DIRECTORY . "/languages"
         );
     }
 
@@ -51,15 +51,15 @@ class ejtemFal {
      * Includes classes and functions.
      */
     public function includes(): void {
-        require_once $this->plugin_path . 'includes/class-ejtemFal-install.php';
+        require_once $this->plugin_path . 'includes/class-faleHafez-install.php';
 
         if (is_admin()) {
-            require_once $this->plugin_path . 'includes/admin/class-ejtemFal-admin.php';
+            require_once $this->plugin_path . 'includes/admin/class-faleHafez-admin.php';
         }
         else {
-            require_once $this->plugin_path . 'includes/class-ejtemFal-public.php';
+            require_once $this->plugin_path . 'includes/class-faleHafez-public.php';
         }
 
-        require_once $this->plugin_path . 'includes/class-ejtemFal-public.php';
+        require_once $this->plugin_path . 'includes/class-faleHafez-public.php';
     }
 }

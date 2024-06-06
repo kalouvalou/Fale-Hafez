@@ -1,10 +1,10 @@
 <?php
 
-namespace ejtemFal;
+namespace faleHafez;
 
 /**
- * Class _Public
- * @package ejtemFal
+ * Class faleHafez_Public
+ * @package faleHafez
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -25,3 +25,5 @@ class efbFunction {
 
 
 }
+
+//HT

@@ -1,9 +1,9 @@
 === Fale Hafez ===
-Contributors:  kalouvalou
+Contributors:  Ejtem,kalouvalou
 Tags: hafez, falehafez, حافظ, فال حافظ, 
 Stable tag: 1.0.0
 Requires at least: 4.7.0
-Tested up to: 6.3.2
+Tested up to: 6.5
 Requires PHP: 5.4 or higher
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -25,7 +25,7 @@ Hafez, whose full name is Shams-ud-Din Muhammad Hafez, was a 14th-century Persia
 **Cultural Enrichment**: Share the beauty and wisdom of Hafez's poetry with your website visitors, introducing them to the rich literary heritage of Persian culture.
 
 **Demo**
-Experience the magic of the Hafez Poetry Randomizer yourself by visiting our website [yerib](https://ejtem.com/wp-plugins/hafez).
+Experience the magic of the Hafez Poetry Randomizer yourself by visiting our website [Ejtem](https://ejtem.com/plugins/hafez/).
 
 **Feedback and Support**
 We appreciate your interest in the Hafez Poetry Randomizer plugin. If you have any questions, feedback, or issues, please don't hesitate to [contact our support team](https://ejtem.com/wp-plugins/contact-us).

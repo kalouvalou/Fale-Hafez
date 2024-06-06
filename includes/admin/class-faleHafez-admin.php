@@ -1,11 +1,11 @@
 <?php
 
-namespace ejtemFal;
+namespace faleHafez;
 
 /**
  * Class Admin
  *
- * @package ejtemFal
+ * @package faleHafez
  */
 class Admin {
 
@@ -24,7 +24,7 @@ class Admin {
            
         }
         
-        include(ejtemFal_PLUGIN_DIRECTORY."includes/functions.php");
+        include(faleHafez_PLUGIN_DIRECTORY."includes/functions.php");
         
 
         // Add plugin caps to admin role
@@ -56,7 +56,7 @@ class Admin {
     public function add_cap() {
         // Get administrator role
         $role = get_role('administrator');
-        $role->add_cap('hafez-ejtemFal');
+        $role->add_cap('fale-hafez');
 
     }
 
@@ -65,18 +65,18 @@ class Admin {
      */
     public function admin_menu() {
         $noti_count = false;
-        $icon       = ejtemFal_PLUGIN_URL . '/includes/admin/assets/image/logo-20px.png';
+        $icon       = faleHafez_PLUGIN_URL . '/includes/admin/assets/image/logo-20px.png';
 
         add_menu_page(
-            __('Fale Hafez', 'hafez-ejtemFal'),
-            __('Fale Hafez', 'hafez-ejtemFal'),
+            __('Fale Hafez', 'fale-hafez'),
+            __('Fale Hafez', 'fale-hafez'),
             
-            'hafez-ejtemFal',
-            'hafez-ejtemFal',
+            'fale-hafez',
+            'fale-hafez',
             '',
             '' . $icon . ''
         ); 
-        add_submenu_page('hafez-ejtemFal', __('Fale Hafez', 'hafez-ejtemFal'), __('Fale Hafez', 'hafez-ejtemFal'), 'hafez-ejtemFal', 'hafez-ejtemFal', [$this, 'panel_callback']);
+        add_submenu_page('fale-hafez', __('Fale Hafez', 'fale-hafez'), __('Fale Hafez', 'fale-hafez'), 'fale-hafez', 'fale-hafez', [$this, 'panel_callback']);
         //
 
     }
@@ -85,8 +85,8 @@ class Admin {
      * Callback outbox page.
      */
     public function panel_callback() {
-        include_once ejtemFal_PLUGIN_DIRECTORY . "/includes/admin/class-ejtemFal-panel.php";
-        $list_table = new Panel_edit();
+        include_once faleHafez_PLUGIN_DIRECTORY . "/includes/admin/class-faleHafez-panel.php";
+        $list_table = new faleHafez_panel();
 
     }
 

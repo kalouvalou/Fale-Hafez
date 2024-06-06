@@ -1,6 +1,6 @@
 <?php
 
-namespace ejtemFal;
+namespace faleHafez;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /**
  * Class Install
- * @package ejtemFal
+ * @package faleHafez
  */
 class Install {
 	/**
@@ -7221,6 +7221,6 @@ class Install {
 		require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 		dbDelta( $sql );
 
-		add_option( 'ejtemFal_db_version', 1.0 );
+		add_option( 'faleHafez_db_version', 1.0 );
 	}
 }
