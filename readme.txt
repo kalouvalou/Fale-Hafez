@@ -1,14 +1,15 @@
 === Fale Hafez ===
 Donate link: https://ejtem.com/donate/
-Contributors:  Ejtem,kalouvalou
+Contributors:  Ejtem
 Tags: hafez, falehafez, حافظ, فال حافظ, 
 Stable tag: 1.0.0
 Requires at least: 4.7.0
 Tested up to: 6.5
-Requires PHP: 5.4 or higher
+Requires PHP: 7.2.24 or higher
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
+The Hafez Plugin is a WordPress that displays random verses of Hafez's poetry on your website with a simple shortcode, adding cultural elegance to your content
 
 == Description ==
 **Hafez Poetry Randomizer Plugin**
