@@ -1,4 +1,5 @@
 === Fale Hafez ===
+Donate link: https://ejtem.com/donate/
 Contributors:  Ejtem,kalouvalou
 Tags: hafez, falehafez, حافظ, فال حافظ, 
 Stable tag: 1.0.0
